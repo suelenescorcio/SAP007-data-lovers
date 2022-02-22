@@ -20,10 +20,11 @@ function allCards(data) {
             <li>Gênero: ${dado.gender}</li>
             <li>Espécie: ${dado.species}</li>
             <li>Origem: ${dado.origin.name}</li>
-            </ul>
+            <li>Tipo: ${dado.type}</li>
+          </ul>
         </div>
       `
-    )
-    .join("")
+    );
+  join(" ");
 }
 
