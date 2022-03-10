@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap');
+
+/* Funçao para a pagina toda */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* fundo */
+body {
+  background-image: url("imagens/fundoram2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+/* imagens */
+.RickMorty {
+  height: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+}
+
+.logo {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 0%;
+  left: 35%;
+}
+
+footer {
+  background-color: #011c40;
+  color: white;
+  text-align: center;
+  padding: 6px;
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  bottom: 0;
+}
+.home_footer { color: inherit; }
+
+/* botões */
+.main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 40%;
+}
+
+.menus {
+  display: flex;
+}
+
+.nav_menus {
+  padding: 20px;
+}
+
+.box{
+  padding: 10px 40px;
+  background-color: #90bf49;
+  color: #022601;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: "Josefin Sans";
+  font-size: x-large;
+  border-radius: 8px;
+}
+.stats{
+  padding: 10px 40px;
+  background-color: #90bf49;
+  color: #022601;
+  font-family: "Josefin Sans";
+  font-size: x-large;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 30%;
+}
+@media(max-width:480px){
+  body{
+    background-size: 300%;
+  }
+  .RickMorty{
+    width: 49%;
+    height: 37%;
+    position: absolute;
+    top: 60%;
+  }
+  .logo{
+    width: 60%;
+    left: 20%;
+    top: 5%;
+
+  }
+  .main{
+    position: relative;
+    top: 25%;
+  }
+  .menus{
+    display: block;
+  }
+
+}
+@media(max-width: 713px){
+  .menus{
+    display: block;
+  }
+}
+@media(max-width: 660px){
+  .main{
+    position: relative;
+    top: 25%;
+  }
+}

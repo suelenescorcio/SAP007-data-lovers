@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Lato:wght@300&display=swap");
+
+/* botão imagem */
+.imgback {
+  left: 90%;
+  width: 10%;
+  height: 20%;
+  position: fixed;
+}
+
+/* fundo */
+body {
+  background-image: url("imagens/fundoram2.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+
+/* select */
+.box {
+  padding: 15px;
+  background-color: #90bf49;
+  color: #022601;
+  border: none;
+  font-family: "Josefin Sans";
+  font-size: 100%;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.menus {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.result {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.cards {
+  background-color: #80d3f9;
+  border: solid 5px #56c32a;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 1em;
+  font-family: Verdana, Tahoma, sans-serif;
+  padding-top: 2%;
+}
+
+.img-card {
+  width: 13vw;
+  border-radius: 2em;
+  margin-top: 0.2em;
+  text-align: center;
+}
+
+.card-name {
+  font-family: Verdana, Tahoma, sans-serif;
+  width: 13vw;
+  text-align: center;
+  color: #011c40;
+}
+
+.info-list {
+  font-family: Verdana, Tahoma, sans-serif;
+  list-style-type: none;
+  padding-left: 0px;
+  width: 13vw;
+}
+
+.logoLink {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .box {
+    display: flex;
+  }
+  .menus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imgback {
+    top: 2%;
+    left: 80%;
+    width: 80px;
+    height: 80px;
+  }
+  .cards {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    width: 60%;
+    margin: 3%;
+  }
+  .img-card {
+    width: -webkit-fill-available;
+  }
+  .card-name {
+    width: unset;
+  }
+  .info-list {
+    width: unset;
+  }
+  .logoLink {
+    flex-direction: column;
+  }
+  .linkHBO{
+    position: relative;
+    top: 150px;
+  }
+  .linkNetflix{
+    position: relative;
+    top: 50px;
+  }
+}
+@media (max-width: 915px) {
+  .imgback {
+    top: 2%;
+    left: 80%;
+    width: 100px;
+  }
+}
